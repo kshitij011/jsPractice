@@ -9,5 +9,5 @@
 console.log('hi');
 
 ((a, b) => {
-    console.log(a+ b);;
+    console.log(a+ b);
 })(2432, 8)
