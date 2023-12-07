@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style ="background-color: #212121; color:white">
+    <ul class="language">
+        <li>JavaScript</li>
+            <!-- <li></li>
+            <li></li> -->
+    </ul>
+</body>
+<script>
+    function addLang(langName){
+        const li = document.createElement('li') //creates new list tag in ul
+        li.innerHTML = langName
+        document.querySelector('.language').appendChild(li) //selecting element through class name to append the child
+    }
+
+    //Other optimised way to prevent retraversing the tree, dsa
+    function addOptLang(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addLang('Python')
+    addLang('TypeScript')
+
+    addOptLang('Java')
+    addOptLang('Cpp')
+    addOptLang('')
+
+    //editing an element
+    const secondLang = document.querySelector('li:nth-child(6)')
+    console.log(secondLang);
+    secondLang.innerHTML = "newLang"
+
+    const newli = document.createElement('li')
+    newli.textContent = "newerLang"
+    secondLang.replaceWith(newli)   //replaces newLang with newerLang
+
+    //removing element
+    const removeLang = document.querySelector("li:last-child")
+    removeLang.remove()
+</script>
+</html>
