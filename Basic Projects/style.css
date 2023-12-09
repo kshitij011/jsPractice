@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    color: bisque;
+    background-color: #858282;
+    text-align: center;
+    padding: 1%;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    background-color: #212121;
+    width: 30vw;
+    height: 100vh;
+    padding: 10px;
+}
+a{
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    font-size: 1.5vw;
+    background-color: #616161;
+    display: block;
+}
+
+.imageSection{
+    padding: 3%;
+    background-color: #ac7373;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.image{
+    height:40%;
+    width:40%;
+    border: 2px solid black;
+}
+
+.image1{
+    background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/prop3.JPG");
+}
