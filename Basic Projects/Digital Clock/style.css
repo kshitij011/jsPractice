@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #919191;
+
+}
+h1{
+    padding: 1%;
+    color:antiquewhite;
+    background-color: #b66262;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.clock{
+    padding: 1%;
+    max-width: 30%;
+    background-color: orange;
+    border-radius: 10px;
+}
