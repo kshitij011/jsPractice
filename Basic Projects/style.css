@@ -45,8 +45,27 @@ a{
     height:40%;
     width:40%;
     border: 2px solid black;
+    background-size: cover;
+    background-position: center;
+}
+
+.image:hover{
+    transform: scale(1.05);
+    box-shadow: 3px solid grey;
 }
 
 .image1{
-    background-image: url("https://www.simplilearn.com/ice9/free_resources_article_thumb/prop3.JPG");
+    background-image: url("./background_changer.png");
+}
+
+.image2{
+    background-image: url("./bmi_calculator.png");
+}
+
+.image3{
+    background-image: url("./digital_clock.png");
+}
+
+.image4{
+    background-image: url("./guess_number_game.png");
 }
