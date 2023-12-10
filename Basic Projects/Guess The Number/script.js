@@ -79,6 +79,8 @@ function endGame(){
     p.classList.add('button')
     p.innerHTML = `<h2 id="newGame">Start new game</h2>`
     p.style.color = 'red'
+    p.style.padding = '1%'
+    p.style.backgroundColor='white'
     startOver.appendChild(p)
     playGame = false
     newGame()
