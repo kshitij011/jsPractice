@@ -1,4 +1,4 @@
-const randomNum = Math.round(Math.random()*100+1)
+let randomNum = Math.round(Math.random()*100+1)
 
 const submit = document.getElementById('button')
 const userInput = document.getElementById('inputBox')
@@ -78,6 +78,7 @@ function endGame(){
     userInput.setAttribute('disabled', '')
     p.classList.add('button')
     p.innerHTML = `<h2 id="newGame">Start new game</h2>`
+    p.style.color = 'red'
     startOver.appendChild(p)
     playGame = false
     newGame()
@@ -85,12 +86,12 @@ function endGame(){
 function newGame(){
     const newGameButton = document.querySelector('#newGame')
     newGameButton.addEventListener('click', function(e){
-        randomNum = Math.round(Math.random()*100+1)
+        randomNum = parseInt(Math.round(Math.random()*100+1))
         prevGuess = []
         numGuesses = 1
         guessSlot.innerHTML=""
         remaining.innerHTML = `${10-numGuesses}`
-        userInput.removeAttribute('disable')
+        userInput.removeAttribute('disabled')
         startOver.removeChild(p)
         playGame = true
     })
