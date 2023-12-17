@@ -12,7 +12,7 @@ console.log(`Person1: ${person1.fullname()}`);
 
 const person2 = {
     Firstname: 'myName2',
-    Lastname: 'Lastname2',
+    Lastname: 'Lastname2'
 }
 
 // console.log(`person2: ${person2.fullname()}`);
