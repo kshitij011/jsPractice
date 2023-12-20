@@ -13,11 +13,11 @@ h1{
 .content{
     display: flex;
     flex-direction: row;
+    height: 100vh;
 }
 .sidebar{
     background-color: #212121;
     width: 30vw;
-    height: 100vh;
     padding: 10px;
 }
 a{
@@ -55,17 +55,17 @@ a{
 }
 
 .image1{
-    background-image: url("./background_changer.png");
+    background-image: url("./Images/background_changer.png");
 }
 
 .image2{
-    background-image: url("./bmi_calculator.png");
+    background-image: url("./Images/bmi_calculator.png");
 }
 
 .image3{
-    background-image: url("./digital_clock.png");
+    background-image: url("./Images/digital_clock.png");
 }
 
 .image4{
-    background-image: url("./guess_number_game.png");
+    background-image: url("./Images/guess_number_game.png");
 }
