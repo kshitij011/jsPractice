@@ -16,6 +16,7 @@ h1{
     height: 100vh;
 }
 .sidebar{
+    position:sticky;
     background-color: #212121;
     width: 30vw;
     padding: 10px;
@@ -39,10 +40,11 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    overflow: scroll;
 }
 
 .image{
-    height:40%;
+    max-height:40%;
     width:40%;
     border: 2px solid black;
     background-size: cover;
@@ -68,4 +70,12 @@ a{
 
 .image4{
     background-image: url("./Images/guess_number_game.png");
+}
+
+.image5{
+    background-image: url("./Images/calculator.png");
+}
+
+.image6{
+    background-image: url("./Images/weather.png");
 }
